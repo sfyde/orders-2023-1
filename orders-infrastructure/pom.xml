@@ -15,12 +15,10 @@
         <dependency>
             <groupId>pl.edu.wszib</groupId>
             <artifactId>orders-api</artifactId>
-            <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>pl.edu.wszib</groupId>
             <artifactId>orders-application</artifactId>
-            <version>${project.version}</version>
         </dependency>
     </dependencies>
 </project>

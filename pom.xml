@@ -8,6 +8,7 @@
     <artifactId>orders-2023-1</artifactId>
     <version>${revision}</version>
     <packaging>pom</packaging>
+
     <modules>
         <module>orders-api</module>
         <module>orders-application</module>
@@ -20,5 +21,25 @@
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>pl.edu.wszib</groupId>
+                <artifactId>orders-api</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>pl.edu.wszib</groupId>
+                <artifactId>orders-application</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>pl.edu.wszib</groupId>
+                <artifactId>orders-infrastructure</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
 </project>
