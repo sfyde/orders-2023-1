@@ -24,7 +24,7 @@ Using `${revision}` mechanism https://maven.apache.org/maven-ci-friendly.html
 
 ### Functionalities
 
-#### Order (interface pl.edu.wszib.orders.api.order.OrderFacadeApi)
+#### 1. Order (interface pl.edu.wszib.orders.api.order.OrderFacadeApi)
 
     - create order
     - add product
@@ -32,7 +32,23 @@ Using `${revision}` mechanism https://maven.apache.org/maven-ci-friendly.html
     - remove product
     - search/get product
 
-#### Product (interface pl.edu.wszib.orders.api.product.ProductFacadeApi)
+#### 2. Product (interface pl.edu.wszib.orders.api.product.ProductFacadeApi)
 
     -create product
     -search/get product
+
+### Data Structure
+
+#### Order
+    -id (uuid)
+    -items
+    -amount
+#### Order Item
+    -(order_id)
+    -product
+    -quantity
+    -amount
+#### Product
+    -id(uiid)
+    -name
+    -pirce
