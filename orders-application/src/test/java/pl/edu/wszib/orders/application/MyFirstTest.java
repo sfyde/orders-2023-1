@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.stream.IntStream;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class MyFirstTest {
@@ -13,7 +14,11 @@ public class MyFirstTest {
         assertTrue(true);
     }
 
-    // TODO: task1 create and run test that tests sum method is working properly
+    @Test
+    public void should_sum_values() {
+        int result = sum(1, 2, 3, 4, 5);
+        assertEquals(15, result);
+    }
 
 
     public static void main() {
