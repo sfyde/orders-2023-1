@@ -1,7 +1,6 @@
 package pl.edu.wszib.orders.api;
 
-// TODO task 2: add limitation to TSuccess parameter type to extend ApiSuccess
-public interface ApiResult<TSuccess, TError extends Enum<?>> {
+public interface ApiResult<TSuccess extends ApiSuccess, TError extends Enum<?>> {
 
     TSuccess success();
 

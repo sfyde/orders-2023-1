@@ -55,7 +55,3 @@ Using `${revision}` mechanism https://maven.apache.org/maven-ci-friendly.html
 - id (uuid)
 - name
 - price
-
-## Task
-
-[//]: # (TODO: Propose pl.edu.wszib.orders.api.product.ProductFacadeApi)
