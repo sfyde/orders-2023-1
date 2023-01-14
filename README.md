@@ -17,7 +17,7 @@ Using `${revision}` mechanism https://maven.apache.org/maven-ci-friendly.html
 
 ## Domain
 
-### Contexs
+### Contexts
 
 - order
 - product
@@ -25,30 +25,33 @@ Using `${revision}` mechanism https://maven.apache.org/maven-ci-friendly.html
 ### Functionalities
 
 #### 1. Order (interface pl.edu.wszib.orders.api.order.OrderFacadeApi)
-
-    - create order
-    - add product
-    - increase/decrease/set quantity
-    - remove product
-    - search/get product
+- create order 
+- add product
+- increase/decrease/set quantity
+- remove product
+- search/get order
 
 #### 2. Product (interface pl.edu.wszib.orders.api.product.ProductFacadeApi)
+- create product
+- search/get product
 
-    -create product
-    -search/get product
-
-### Data Structure
+### Data structures
 
 #### Order
-    -id (uuid)
-    -items
-    -amount
+
+- id (uuid)
+- items
+- amount
+
 #### Order Item
-    -(order_id)
-    -product
-    -quantity
-    -amount
+
+- (order_id)
+- product
+- quantity (positive int)
+- amount
+
 #### Product
-    -id(uiid)
-    -name
-    -pirce
+
+- id (uuid)
+- name
+- price

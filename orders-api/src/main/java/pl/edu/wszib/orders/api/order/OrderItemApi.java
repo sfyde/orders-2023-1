@@ -5,8 +5,7 @@ import pl.edu.wszib.orders.api.product.ProductApi;
 import java.math.BigDecimal;
 
 public interface OrderItemApi {
-
     ProductApi product();
-   Integer quantity();
+    Integer quantity();
     BigDecimal amount();
 }

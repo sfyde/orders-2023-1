@@ -4,9 +4,9 @@ import pl.edu.wszib.orders.api.ApiSuccess;
 
 import java.math.BigDecimal;
 
-public interface ProductApi extends  ProductCreateApi, ApiSuccess {
-
+public interface ProductApi extends ProductCreateApi, ApiSuccess {
     String id();
+
     @Override
     String name();
 
