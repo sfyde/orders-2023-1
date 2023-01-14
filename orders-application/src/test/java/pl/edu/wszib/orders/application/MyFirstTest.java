@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.stream.IntStream;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class MyFirstTest {
@@ -18,6 +19,12 @@ public class MyFirstTest {
 
     public static void main() {
         sum(1, 2, 3, 4, 5);
+    }
+
+
+    @Test
+    public void test_sum() {
+        assertEquals(15,MyFirstTest.sum(1,2,3,4,5));
     }
 
     public static int sum(int... integers) {
