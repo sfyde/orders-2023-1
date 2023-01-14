@@ -1,17 +1,9 @@
 package pl.edu.wszib.orders.api.product;
 
 
-public interface ProductResult {
+import pl.edu.wszib.orders.api.ApiResult;
+import pl.edu.wszib.orders.api.ApiSuccess;
 
-    ProductApi success();
+public interface ProductResult extends ApiResult<ApiSuccess, ProductError> {
 
-    ProductError error();
-
-    default boolean isSuccess() {
-        return success() != null;
-    }
-
-    default  boolean isError(){
-        return !isSuccess();
-    }
 }
