@@ -1,14 +1,7 @@
 package pl.edu.wszib.orders.api.order;
 
-public interface OrderResult {
-    OrderApi success();
-    OrderError error();
+import pl.edu.wszib.orders.api.ApiResult;
 
-    default boolean isSuccess() {
-        return success() != null;
-    }
+public interface OrderResult extends ApiResult<OrderApi, OrderError> {
 
-    default boolean isError() {
-        return !isSuccess();
-    }
 }
