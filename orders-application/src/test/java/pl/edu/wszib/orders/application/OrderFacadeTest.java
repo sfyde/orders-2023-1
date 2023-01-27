@@ -3,6 +3,7 @@ package pl.edu.wszib.orders.application;
 import org.junit.jupiter.api.Test;
 import pl.edu.wszib.orders.api.order.OrderResult;
 
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
@@ -13,15 +14,42 @@ public class OrderFacadeTest {
     public void should_be_able_to_create_order() {
         // TODO: task1 impl
         // given:
-
         // when:
+        final OrderResult result = orderFacade.create();
 
-        // then:
+        //then:
+        assertTrue(result.isSuccess());
     }
 
     // TODO: task2 propose test methods to cover all use cases
+
     @Test
     public void should_be_able_to_add_product_to_order() {
+
+    }
+
+    @Test
+    public void should_be_able_to_increase_product_in_order() {
+
+    }
+
+    @Test
+    public void should_be_able_to_decrease_product_in_order() {
+
+    }
+
+    @Test
+    public void should_be_able_to_remove_product_from_order() {
+
+    }
+
+    @Test
+    public void should_not_be_able_to_create_order_with_already_existing_id() {
+
+    }
+
+    @Test
+    public void should_be_able_to_set_product_quantity_in_order() {
 
     }
 
