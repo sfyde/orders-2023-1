@@ -37,9 +37,22 @@ public class OrderFacadeTest {
     public void should_be_able_to_decrease_product_in_order() {
 
     }
+    @Test
+    public void should_not_be_able_to_decrease_product_in_order_bellow_zero() {
+
+    }
+    @Test
+    public void should_be_able_to_increase_product_in_order_when_adding_existing_product_in_order() {
+
+    }
 
     @Test
     public void should_be_able_to_remove_product_from_order() {
+
+    }
+
+    @Test
+    public void should_not_be_able_to_remove_product_from_not_existing_order_id() {
 
     }
 
@@ -50,6 +63,11 @@ public class OrderFacadeTest {
 
     @Test
     public void should_be_able_to_set_product_quantity_in_order() {
+
+    }
+
+    @Test
+    public void should_not_be_able_to_set_product_quantity_in_order_bellow_zero() {
 
     }
 
