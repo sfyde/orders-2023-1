@@ -15,10 +15,10 @@ public class OrderFacadeTest {
         // TODO: task1 impl
         // given:
         // when:
-        final OrderResult result = orderFacade.create();
+        final OrderResult testOrder = orderFacade.create();
 
         //then:
-        assertTrue(result.isSuccess());
+        assertTrue(testOrder.isSuccess());
     }
 
     // TODO: task2 propose test methods to cover all use cases
